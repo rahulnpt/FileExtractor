@@ -1,0 +1,10 @@
+drop table master_file_mapping;
+
+CREATE TABLE master_file_mapping (
+	column_id int not null identity(1,1),
+	Standard_Column_Name VARCHAR(100) ,
+	Source_Sheet_column_name VARCHAR(100),
+	column_data_type VARCHAR(100),
+	column_constraint VARCHAR(150),
+	primary key (column_id)
+);
